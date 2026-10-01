@@ -1,9 +1,9 @@
 locals {
-  name_prefix = "${var.env}-2392829"
+  name_prefix = "${var.env}-terraform"
 
   common_tags = {
-    Name        = local.name_prefix
-    cco_trainee = "2392829@cognizant.com"
+    Project     = "Terraform AMI Data Source"
     Environment = var.env
+    ManagedBy   = "Terraform"
   }
 }
